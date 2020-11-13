@@ -11,7 +11,7 @@
     "module": "es6-global",
     "in-source": true
   },
-  "suffix": ".bs.js",
+  "suffix": ".js",
   "bs-dependencies": [],
   "warnings": {
     "error" : "+101"

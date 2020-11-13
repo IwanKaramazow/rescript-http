@@ -15,6 +15,7 @@ function getId() {
   return ++globalIdCounter;
 }
 
+
 var bikes = [
   { id: getId(), name: "Aeroad CFR Disc Di2", price: 7499 },
   { id: getId(), name: "Aeroad CFR Disc AXS", price: 7999 },
@@ -32,7 +33,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/bikes", (req, res) => {
-  res.json(bikes);
+  setTimeout(() => {
+    res.json(bikes);
+  }, 3000);
 });
 
 app.get("/api/bikes/:bikeId", (req, res) => {
